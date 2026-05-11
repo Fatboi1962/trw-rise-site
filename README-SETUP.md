@@ -6,7 +6,7 @@ This folder contains the finished TRW.Rise homepage files.
 
 - `index.html` — the page structure and website copy
 - `styles.css` — the full design, colors, spacing, mobile layout, and branding
-- `script.js` — mobile menu and signup button behavior
+- `script.js` — mobile menu, newsletter status, and signup button behavior
 - `assets/trw-rise-official-logo.jpeg` — official website logo
 - `assets/trw-rise-mark.jpeg` — secondary brand mark and visual watermark asset
 
@@ -51,10 +51,18 @@ Watermark:
 - Text watermark appears as `@Trw.rise`
 - Default placement is bottom right
 
-## Current call to action
+## Current newsletter call to action
 
 The homepage points visitors to:
 
 `Start the 7-Day Discipline Reset`
 
-The signup form is visual only for now. To collect real emails, connect it later to Replit Database, Google Forms, Mailchimp, ConvertKit, or another email tool.
+The signup form now posts to FormSubmit using:
+
+`terry.2001.2000@gmail.com`
+
+The first automated letter is:
+
+`Nobody’s Coming to Save You.`
+
+Important: FormSubmit usually sends a one-time activation email the first time the form is used. Open that email and confirm it so live signups reach your inbox.

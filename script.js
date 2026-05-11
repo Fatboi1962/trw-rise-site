@@ -1,6 +1,7 @@
 const menuButton = document.querySelector("[data-menu-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
 const signupForm = document.querySelector(".signup-form");
+const formStatus = document.querySelector("[data-form-status]");
 
 if (menuButton && navLinks) {
   menuButton.addEventListener("click", () => {
@@ -17,12 +18,22 @@ if (menuButton && navLinks) {
 }
 
 if (signupForm) {
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get("joined") === "1" && formStatus) {
+    formStatus.textContent = "You are in. Check your inbox for Day One.";
+  }
+
   signupForm.addEventListener("submit", (event) => {
-    event.preventDefault();
     const button = signupForm.querySelector("button");
     if (button) {
-      button.textContent = "Reset Requested";
+      button.textContent = "Sending Day One...";
+      button.disabled = true;
       button.setAttribute("aria-live", "polite");
+    }
+
+    if (formStatus) {
+      formStatus.textContent = "Submitting. Stay locked in.";
     }
   });
 }
