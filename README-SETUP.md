@@ -9,6 +9,7 @@ This folder contains the finished TRW.Rise homepage files.
 - `script.js` — mobile menu, newsletter status, and signup button behavior
 - `assets/trw-rise-official-logo.jpeg` — official website logo
 - `assets/trw-rise-mark.jpeg` — secondary brand mark and visual watermark asset
+- `assets/trw-rise-hero-portrait.jpeg` — hero portrait of Terry with the "God carried me when nobody else did" brand statement
 
 ## Best Replit setup
 
@@ -30,6 +31,7 @@ These paths are already built into the site:
 
 - `assets/trw-rise-official-logo.jpeg`
 - `assets/trw-rise-mark.jpeg`
+- `assets/trw-rise-hero-portrait.jpeg`
 
 If the logo does not show, the asset folder or file name is wrong.
 
